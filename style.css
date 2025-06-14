@@ -1,0 +1,135 @@
+ .line{
+    background-color: bisque;
+  }
+  #new{
+    font-family: cursive;
+  }
+  h1{
+    background-color: rgb(226, 45, 45);
+  }
+  .parent p{
+    /*background-color:aquamarine; */
+  }
+p:hover{
+    color:chartreuse;
+    background-color: aqua;
+}
+ .border{
+            border: 2pxsolid black;
+            padding-left: 20px;
+       }
+.margin{
+    border: 3px solid black;
+    padding: 20px;
+}        
+.margin2{
+    border: 3px solid black;
+    padding-top: 50px;
+}
+.static{
+  position: static;
+}
+.position{
+  border: 2px solid violet;
+}
+.static{
+  position: relative;
+  top:30px;
+  left:60px;
+}
+
+.page{
+  height: 100px;
+}
+.fixed{
+  position: fixed;
+  top:80px;
+}
+.sticky{
+  position: sticky;
+  top: 0;
+  font-size: xx-large
+}
+.inline{
+  display: flex;
+}
+.flex-container{
+  display: flex
+}
+.item{
+  background-color: seagreen;
+  border: 2px solid rgb(red, green, blue)
+  height:100px;
+  width: 100px
+}
+.inline{
+  display: flex
+}
+.flex-container{
+  display: flex
+  /* flex-direction: row-reserve; */
+  justify-content: flex-end;
+}
+.flex-container div{
+  background-color: turquoise;
+  border:2px solid brown;
+  height: 100px;
+  width:100px;
+}
+.item2{
+  /* flex-grow: 2; */
+  flex-shrink: 0;
+}
+.navbar{
+  display: flex;
+}
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  color: brown;
+  background-color: aqua;
+  border-radius: 50px;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.grid-container{
+   display: grid;
+   grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px 100px;
+  gap: 20px;
+
+}
+.grid-container div{
+  background-color:rgb(197, 203, 248);
+  border: 2px solid rgb(13, 32, 201);
+}
+.item1{
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.item2{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.item3{
+  grid-column-start:  4;
+}
+.item4{
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+@media(max-width:720px){
+  .navbar{
+    display: flex;
+    flex-direction: column;
+  }
+}
+  .container{
+    display: flex;
+    flex-direction: column; 
+}
